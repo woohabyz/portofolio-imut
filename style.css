@@ -280,7 +280,7 @@ span {
   margin-top: 85px;
   margin-bottom: 120px;
   max-width: 400px;
-  min-height: 500px;
+  min-height: 100vh;
   border: 1px solid;
   border-radius: 8px;
   font-family: sans-serif;
@@ -289,8 +289,8 @@ span {
   background-color: #f4f5f7; 
   align-items: center;
   justify-content: center;
-  margin-left: 700px;
   display: flex;
+  margin-left: 490px;
 }
 
 .section-title {
@@ -312,6 +312,12 @@ span {
   font-size: 2rem;
   word-wrap: break-word;
 
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
 }
 
 .address {
@@ -337,3 +343,54 @@ span {
 
 .footer-nav { margin-top: 10px; }
 .footer-social { margin-top: 10px; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 10px;
+  margin-right: 750px;
+  margin-bottom: 120px;
+  width: 100%;
+  max-width: 500px;      
+  background: transparent;
+  margin-left: 320px;
+}
+
+.contact-form label {
+  caption-side: top;     
+  margin-bottom: 10px;   
+  font-weight: bold;
+  font-size: 18px;
+  color: #a8c5f5;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #dce6ff;
+  color: #152238;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0033cc;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; 
+  }
+}
