@@ -55,7 +55,6 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #fff;
   border-bottom: 3px solid #a8c5f5;
 }
 
@@ -302,7 +301,7 @@ span {
 }
 
 .contact-card p {
-  color: #a8c5f5;
+  color: #2a4c83;
   display: flex;
   align-items: center;
   gap: 15px;
