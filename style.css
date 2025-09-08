@@ -59,13 +59,13 @@ nav a.active {
   border-bottom: 3px solid #a8c5f5;
 }
 
-/* SECTION */
+
 section {
   min-height: 100vh;
   padding: 8rem 9% 5rem;
 }
 
-/* JUDUL SECTION */
+
 .section-title {
   font-size: 3.5rem;
   font-weight: bold;
@@ -74,7 +74,7 @@ section {
   color: #fff;
 }
 
-/* HOME */
+
 .home {
   display: flex;
   justify-content: center;
