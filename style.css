@@ -80,6 +80,7 @@ section {
   align-items: center;
   gap: 8rem;
   background-color: #191970;
+  margin-top: 2px;
 }
 
 .home .home-content h1 {
@@ -99,10 +100,12 @@ span {
 }
 
 .home-img img {
-  width: 32vw;
-  border-radius: 50%;
+  width: 22vw;
+  border-radius: 10%;
   box-shadow: 0 0 25px rgba(0,0,255,0.4);
   transition: 0.2s linear;
+  margin-top: 4rem;
+  margin-bottom: 20.5rem;
 }
 
 .home-img img:hover {
@@ -132,6 +135,11 @@ span {
 
 .about-section {
   background-color: #0d1b8a;
+  margin-bottom: 10rem ;
+}
+
+.about-section .section-title h2 {
+  margin-top: 0px;
 }
 
 .about-container {
@@ -140,10 +148,12 @@ span {
   align-items: center;
   gap: 5rem;
   flex-wrap: wrap;
+  margin-top: 6px;
 }
 
 .about-content {
   max-width: 600px;
+  margin-top: 2px;
 }
 
 .about-content p {
@@ -170,45 +180,132 @@ span {
 }
 
 
-.skills-section {
-  background: #152238;
+.hardskills-title {
+  margin-top: 6rem;
   text-align: center;
-  line-height: 1.5;
+  font-size: 3rem;
+  color: #dce6ff;
+}
+
+.skills-section {
+  background-color:#152238;
+}
+
+.skill span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  color: #fff;
+}
+
+.progress {
+  width: 100%;
+  background: rgba(168, 197, 245, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 24px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6a9ffb, #a8c5f5);
+  border-radius: 8px;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  right: 8px;      
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.softskills-title {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #dce6ff;
+}
+
+.skill {
+  margin-bottom: 2rem;
+}
+
+.skill span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  color: #fff;
+}
+
+.progress {
+  width: 100%;
+  background: rgba(168, 197, 245, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 24px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6a9ffb, #a8c5f5);
+  border-radius: 8px;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  right: 8px;       /* jarak dari ujung kanan progress bar */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
 }
 
 
-.about-img img {
-  width: 280px;
-  border-radius: 50%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+  margin-bottom: 20rem;
+  margin-left: 25rem;
+}
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 7.8rem;
 }
 
 .education-section {
-  background-color: rgba(31,111,214,0.08);
+  background-color: #2a4c83;
+}
+.edu-card {
+  background: rgba(168, 197, 245, 0.08);
+  padding: 1.5rem 2rem;
+  border-left: 4px solid #a8c5f5;
+  border-radius: 6px;
 }
 
-.education-section .intro {
-  font-size: 3rem;
-  font-weight: 500;
+.edu-card h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.edu-card p {
+  font-size: 1.6rem;
   color: #dce6ff;
-  font-family: 'Poppins';
-  margin-bottom: 24px;
 }
 
-.education-section .verse {
-  font-family: 'Poppins';
-  font-size: 3rem;
-  font-weight: 500;
-  color: #dce6ff;  
-  margin-bottom: 24px;
-
-}
-
-.education-section .outro {
-  font-family: 'Poppins';
-  font-size: 3rem;
-  font-weight: 500;
-  color: #dce6ff;
+.edu-card span {
+  font-size: 1.4rem;
+  color: #a8c5f5;
 }
 
 .projects {
